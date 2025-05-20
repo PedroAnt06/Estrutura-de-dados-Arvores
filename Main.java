@@ -15,7 +15,15 @@ public class Main {
 
         System.out.println("Quantidade de nos:" + arvore.contarNos());
 
+        System.out.println("Pre Ordem");
         arvore.preordem();
+
+        System.out.println("\n");
+
+        System.out.println("Em Ordem");
+        arvore.emordem();
+
+        System.out.println("\n");
     }
 
 }

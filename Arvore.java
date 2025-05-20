@@ -28,4 +28,16 @@ public class Arvore {
         preordem(node.direita);
     }
 
+
+    public void emordem() {
+        emordem(raiz);
+    }
+
+    public void emordem(No node) {
+        if (node == null) return;
+
+        emordem(node.esquerda);
+        System.out.println(node.valor + " ");
+        emordem(node.direita);
+    }
 }
