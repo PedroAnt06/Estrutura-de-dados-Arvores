@@ -27,6 +27,11 @@ public class Main {
 
         System.out.println("Pos Ordem");
         arvore.posordem();
+
+        System.out.println("\n");
+
+        System.out.println("Em nivel");
+        arvore.emnivel();
     }
 
 }
