@@ -40,4 +40,17 @@ public class Arvore {
         System.out.println(node.valor + " ");
         emordem(node.direita);
     }
+
+    public void posordem() {
+        posordem(raiz);
+    }
+
+    public void posordem(No node) {
+        if (node == null) return;
+
+        posordem(node.esquerda);
+        posordem(node.direita);
+        System.out.println(node.valor + " ");
+    }
+
 }

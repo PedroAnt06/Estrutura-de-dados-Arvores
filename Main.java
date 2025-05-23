@@ -24,6 +24,9 @@ public class Main {
         arvore.emordem();
 
         System.out.println("\n");
+
+        System.out.println("Pos Ordem");
+        arvore.posordem();
     }
 
 }
