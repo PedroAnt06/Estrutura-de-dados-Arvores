@@ -32,6 +32,20 @@ public class Main {
 
         System.out.println("Em nivel");
         arvore.emnivel();
+
+        System.out.println("Pre Ordem Iterativo");
+        arvore.preordemIterativa();
+
+        System.out.println("\n");
+
+        System.out.println("Em Ordem Iterativo");
+        arvore.emordemIterativa();
+
+        System.out.println("\n");
+
+        System.out.println("Pos Ordem Iterativo");
+        arvore.posordemIterativa();
+
     }
 
 }
