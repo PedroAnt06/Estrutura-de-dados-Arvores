@@ -6,7 +6,7 @@ import java.util.Stack;
 public class Arvore {
     No raiz;
 
-    public Arvore(No raiz) {
+    public Arvore() {
         this.raiz = raiz;
     }
 
@@ -280,4 +280,17 @@ public class Arvore {
 
         return no;
     }
-}
+
+    public static void main(String[] args) {
+        Arvore arvore = new Arvore();
+
+        int[] chaves = {10, 20, 30, 40, 50, 25};
+
+        for (int chave : chaves) {
+            arvore.raiz = arvore.inserirAVL(arvore.raiz, String.valueOf(chave));
+        }
+
+        System.out.println("Percurso em ordem da árvore AVL:");
+        arvore.preordem(arvore.raiz);
+        }
+    }

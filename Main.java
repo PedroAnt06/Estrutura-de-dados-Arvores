@@ -14,7 +14,7 @@ public class Main {
         raiz.esquerda.esquerda = new No("D");
         raiz.esquerda.direita = new No("E");
         raiz.direita.direita = new No("F");
-        Arvore arvore = new Arvore(raiz);
+        Arvore arvore = new Arvore();
         System.out.println("Quantidade de nos:" + arvore.contarNos());
         System.out.println("Pre Ordem");
         arvore.preordem();
@@ -45,5 +45,6 @@ public class Main {
         System.out.println("Metodo Contar folhas");
         arvore.contarFolhas();
         System.out.println("Metodo");
+
     }
 }
